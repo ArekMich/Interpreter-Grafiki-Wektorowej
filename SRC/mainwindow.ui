@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>806</width>
+    <height>535</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/MyFiles/images/1511.jpg);</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="6" column="2">
+     <widget class="QLineEdit" name="myLineEdit">
+      <property name="minimumSize">
+       <size>
+        <width>350</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="3">
+     <widget class="QPushButton" name="myPushButton">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>130</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>130</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::DefaultContextMenu</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-color:rgb(0, 0, 0);
+background-image: url(:/MyFiles/images/BACKGROUND12.jpg);
+font: 75 11pt &quot;Aharoni&quot;;
+background-color: rgb(255, 255, 255);
+border: 2px solid rgb(154, 172, 200);
+</string>
+      </property>
+      <property name="text">
+       <string>Enter</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>124</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="shortcut">
+       <string>Return</string>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="2">
+     <widget class="QGraphicsView" name="myScreen">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>600</width>
+        <height>450</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>8888</width>
+        <height>8888</height>
+       </size>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>1</width>
+        <height>1</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>400</width>
+        <height>300</height>
+       </size>
+      </property>
+      <property name="cursor" stdset="0">
+       <cursorShape>CrossCursor</cursorShape>
+      </property>
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">    border: 2px solid rgb(154, 172, 200);
+    border-radius: 4px;
+    padding: 2px;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::WinPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>1</number>
+      </property>
+      <property name="midLineWidth">
+       <number>0</number>
+      </property>
+      <property name="sceneRect">
+       <rectf>
+        <x>0.000000000000000</x>
+        <y>0.000000000000000</y>
+        <width>800.000000000000000</width>
+        <height>600.000000000000000</height>
+       </rectf>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="dragMode">
+       <enum>QGraphicsView::RubberBandDrag</enum>
+      </property>
+      <property name="transformationAnchor">
+       <enum>QGraphicsView::AnchorViewCenter</enum>
+      </property>
+      <property name="resizeAnchor">
+       <enum>QGraphicsView::AnchorViewCenter</enum>
+      </property>
+      <property name="viewportUpdateMode">
+       <enum>QGraphicsView::BoundingRectViewportUpdate</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="3">
+     <widget class="QListWidget" name="myListWidget">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>130</width>
+        <height>350</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>130</width>
+        <height>777777</height>
+       </size>
+      </property>
+      <property name="mouseTracking">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/MyFiles/images/BACKGROUND12.jpg);
+    border: 2px solid rgb(154, 172, 200);
+    border-radius: 4px;
+padding: 2px;
+selection-background-color: rgb(182, 182, 182);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::WinPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QTextEdit" name="textEdit">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>80</width>
+          <height>23</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>80</width>
+          <height>23</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>7</pointsize>
+         </font>
+        </property>
+        <property name="cursor" stdset="0">
+         <cursorShape>ArrowCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-image: url(:/MyFiles/images/BACKGROUND12.jpg);
+ border: 2px solid rgb(154, 172, 200);
+ border-radius: 4px;
+
+</string>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="minimumSize">
+    <size>
+     <width>40</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/MyFiles/images/background3.jpg);</string>
+   </property>
+   <property name="movable">
+    <bool>true</bool>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionFaqButton"/>
+   <addaction name="actionExplainButton"/>
+   <addaction name="actionReadFileButton"/>
+   <addaction name="actionSaveToFileButton"/>
+   <addaction name="actionTakeScreenButton"/>
+   <addaction name="actionClearButton"/>
+  </widget>
+  <action name="actionClearButton">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/MyFiles/icons/icons8-Trash.png</normaloff>:/MyFiles/icons/icons8-Trash.png</iconset>
+   </property>
+   <property name="text">
+    <string>ClearButton</string>
+   </property>
+   <property name="toolTip">
+    <string>Clear entire scene...</string>
+   </property>
+  </action>
+  <action name="actionTakeScreenButton">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/MyFiles/icons/icons8-Camera Filled.png</normaloff>:/MyFiles/icons/icons8-Camera Filled.png</iconset>
+   </property>
+   <property name="text">
+    <string>takeScreenButton</string>
+   </property>
+   <property name="toolTip">
+    <string>Take a screenshot...</string>
+   </property>
+  </action>
+  <action name="actionReadFileButton">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/MyFiles/icons/icons8-File.png</normaloff>:/MyFiles/icons/icons8-File.png</iconset>
+   </property>
+   <property name="text">
+    <string>ReadFileButton</string>
+   </property>
+   <property name="toolTip">
+    <string>Open file...</string>
+   </property>
+  </action>
+  <action name="actionSaveToFileButton">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/MyFiles/icons/icons8-Save Filled.png</normaloff>:/MyFiles/icons/icons8-Save Filled.png</iconset>
+   </property>
+   <property name="text">
+    <string>SaveToFileButton</string>
+   </property>
+   <property name="toolTip">
+    <string>Save file...</string>
+   </property>
+  </action>
+  <action name="actionFaqButton">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/MyFiles/icons/icons8-Help Filled-50.png</normaloff>:/MyFiles/icons/icons8-Help Filled-50.png</iconset>
+   </property>
+   <property name="text">
+    <string>FaqButton</string>
+   </property>
+   <property name="toolTip">
+    <string>Need help? Command list...</string>
+   </property>
+  </action>
+  <action name="actionExplainButton">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/MyFiles/icons/icons8-Literature-26.png</normaloff>:/MyFiles/icons/icons8-Literature-26.png</iconset>
+   </property>
+   <property name="text">
+    <string>ExplainButton</string>
+   </property>
+   <property name="toolTip">
+    <string>More about application...</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>myLineEdit</tabstop>
+  <tabstop>myListWidget</tabstop>
+ </tabstops>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
